@@ -13,8 +13,8 @@ pipelines:
         services:
           - docker
         script:
-          - git clone --bare git@bitbucket.org:lameduse/lameduse-opensource-web-env-copy.git
-          - cd RepoName.git
+          - git clone --bare git@bitbucket.org:lameduse/lameduse-opensource-web-env-copy.git ./repo
+          - cd repo
           - git push --mirror git@github.com:LaMeDuSe/web-env-copy.git
 
 definitions:
