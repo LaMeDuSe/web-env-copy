@@ -1,0 +1,23 @@
+image: atlassian/default-image:3
+options:
+  docker: true
+  size: 2x
+
+pipelines:
+  default:
+    - step:
+        name: Sync GitHub Mirror
+        image: alpine/git:latest
+        clone:
+          enabled: false
+        services:
+          - docker
+        script:
+          - git clone --bare git@bitbucket.org:lameduse/lameduse-opensource-web-env-copy.git
+          - cd RepoName.git
+          - git push --mirror git@github.com:LaMeDuSe/web-env-copy.git
+
+definitions:
+  services:
+    docker:
+      memory: 4096

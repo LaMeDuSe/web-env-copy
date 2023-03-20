@@ -1,29 +1,17 @@
-# README #
+# Web Env Copy
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Why this script ?
 
-### What is this repository for? ###
+We needed a way to update env into already built client web app.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+So this script aim to copy all found env into a file such as a JSON file that can be fetched from inside the app.
 
-### How do I get set up? ###
+## Usage
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+`web_env_copy.sh ./build/env.json`
 
-### Contribution guidelines ###
+## License
 
-* Writing tests
-* Code review
-* Other guidelines
+This software is licensed under the terms of the MIT License.
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+For more information, see the [LICENSE](LICENSE) file.
