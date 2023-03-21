@@ -33,7 +33,3 @@ done
 sed -i '$ s/,$//' $file
 
 echo '}' >> $file
-
-# # add opening and closing brackets
-# echo '{' | cat - web_env.json > temp && mv temp web_env.json
-# echo '}' >> web_env.json
